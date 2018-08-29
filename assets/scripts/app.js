@@ -33,15 +33,16 @@ var TimeTable = function () {
         });
     }
 
-    var populateData = function(pageContent, data) {
-        var template = document.querySelector('#schedule-template');
-        
+    var populateData = function(pageContent, data) {                
         pageContent.html('');
         pageContent.append('<div class="row">');
 
+        var template = document.querySelector('#schedule-template');
         var i = 0;
+
         data.timeTable.forEach(timetable => {
-            i++;
+            i++;            
+
             template.content.querySelector('#scheduled-day').innerHTML = timetable.shiftDay;
             template.content.querySelector('#scheduled-date').innerHTML = timetable.shiftDate;
 
@@ -50,10 +51,10 @@ var TimeTable = function () {
                 j++;
 
                 if(j % 2) {
-                    template.content.querySelector('#shift_1 .status-title').innerHTML = "Day Shift:";
+                    template.content.querySelector('#shift_1 .status-title').innerHTML = 'Day Shift:';
                     template.content.querySelector('#shift_1 .status-name').innerHTML = engineer.name;
                 } else {
-                    template.content.querySelector('#shift_2 .status-title').innerHTML = "Night Shift:";
+                    template.content.querySelector('#shift_2 .status-title').innerHTML = 'Night Shift:';
                     template.content.querySelector('#shift_2 .status-name').innerHTML = engineer.name;
                 }                                
             });
@@ -61,6 +62,9 @@ var TimeTable = function () {
             var content = document.importNode(template.content, true);
             pageContent.append(content);
 
+            template.content.querySelector('#shift_1 .status-name').innerHTML = '';
+            template.content.querySelector('#shift_2 .status-name').innerHTML = '';
+            
             if(i === 5) {
                 pageContent.append('</div>');
                 pageContent.append('<div class="row">');
