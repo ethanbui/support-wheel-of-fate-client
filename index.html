@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8" />
+        <title>JWOF</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="author" />
+        
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />		
+        <link href="assets/css/app.css" rel="stylesheet" id="style_components" type="text/css" />        
+	</head>
+    <!-- END HEAD -->
+
+    <body>
+        <!-- BEGIN CONTAINER -->
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="page-content">
+                    <!-- BEGIN BREADCRUMBS -->
+                    <div class="breadcrumbs">
+                        <h1>jWOF</h1>
+                    </div>
+                    <!-- END BREADCRUMBS -->
+                    <!-- BEGIN PAGE BASE CONTENT -->
+                    <div class="page-content-body">                        
+                    </div>                    
+                    <!-- END PAGE BASE CONTENT -->
+                </div>
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/scripts/app.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+    </body>
+    <template id="schedule-template">
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+            <div class="dashboard-stat bordered">
+                <div class="display">
+                    <div class="title">
+                        <h3>
+                            <small id="scheduled-day"></small>
+                        </h3>
+                        <small id="scheduled-date"></small>
+                    </div>
+                </div>
+                <div class="schedule-info">
+                    <div class="border">
+                        <span style="width: 100%;" class="progress-bar progress-bar-success green-sharp"/>
+                    </div>
+                    <div class="status" id="shift_1">
+                        <div class="status-title"></div>
+                        <div class="status-name"></div>
+                    </div>
+                    <div class="status" id="shift_2">
+                        <div class="status-title"></div>
+                        <div class="status-name"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</html>

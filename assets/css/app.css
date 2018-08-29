@@ -1,0 +1,155 @@
+/* Set default body */
+body {
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    direction: "ltr";
+    font-size: 14px;
+    background: #2f373e;
+}
+
+/* Wrapper for above 991px */
+@media (min-width: 991px) {
+  /* 991px */
+  .wrapper {
+    margin: 20px; } 
+}
+
+/* Page Content */
+.page-content {
+  padding: 30px;
+  min-height: 500px;
+  margin-bottom: 15px;
+  background: #fff; 
+}
+
+@media (max-width: 992px) {
+  /* 992px */
+  .page-content {
+    margin-top: -1px; 
+  } 
+}
+
+@media (min-width: 992px) {
+  /* 991px */
+  .page-content {
+    padding-top: 50px;
+    position: relative;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-top-right-radius: 2px;
+    -ms-border-top-right-radius: 2px;
+    -o-border-top-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background-clip: padding-box;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-bottom-left-radius: 2px;
+    -ms-border-bottom-left-radius: 2px;
+    -o-border-bottom-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-clip: padding-box;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-bottom-right-radius: 2px;
+    -ms-border-bottom-right-radius: 2px;
+    -o-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-clip: padding-box; } 
+}
+
+/***
+Dashboard Stats 2
+***/
+.dashboard-stat {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 15px 15px 30px 15px;
+  margin-bottom: 20px; 
+}
+  .dashboard-stat.bordered {
+    border: 1px solid #e7ecf1; 
+}
+  .dashboard-stat .display {
+    margin-bottom: 20px; 
+  }
+    .dashboard-stat .display:before, .dashboard-stat2 .display:after {
+      content: " ";
+      display: table; 
+    }
+    .dashboard-stat .display:after {
+      clear: both; 
+    }
+    .dashboard-stat .display .title {
+      float: left;
+    }
+      .dashboard-stat .display .title h3 {
+        margin: 0 0 2px 0;
+        padding: 0;
+        font-size: 30px;
+        font-weight: 400; 
+      }
+        .dashboard-stat .display .title h3 > small {
+          font-size: 20px;
+          font-weight: 600; 
+        }
+      .dashboard-stat .display .title small {
+        font-size: 14px;
+        color: #65A0D0;
+        font-weight: 500;
+        text-transform: uppercase; 
+      }
+
+  .dashboard-stat .schedule-info {
+    clear: both; 
+  }
+    .dashboard-stat .schedule-info .border {
+      margin: 0;
+      height: 1px;
+      clear: both;
+      display: block; 
+    }
+    .dashboard-stat .schedule-info .status {
+      margin-top: 5px;
+      font-size: 15px;
+      color: #666;
+      font-weight: 500;
+      clear: both
+    }
+      .dashboard-stat .schedule-info .status .status-title {
+        float: left;
+      }
+      .dashboard-stat .schedule-info .status .status-name {
+        float: right;
+      }
+
+/***
+UI Loading
+***/
+.page-loading {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 125px;
+  margin-left: -60px;
+  margin-top: -30px;
+  padding: 7px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); }
+  .page-loading > span {
+    line-height: 20px;
+    vertical-align: middle; }
